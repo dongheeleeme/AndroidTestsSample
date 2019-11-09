@@ -19,6 +19,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
 
         loginPresenter = LoginPresenter(this, Injector.provideLoginRepository())
 
+        flavorText.text = BuildConfig.FLAVOR
         loginButton.setOnClickListener {
             loginPresenter.onClickLogin()
         }

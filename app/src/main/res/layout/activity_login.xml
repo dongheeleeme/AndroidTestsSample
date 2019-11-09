@@ -14,14 +14,31 @@
         android:paddingTop="56dp"
         android:paddingRight="24dp">
 
-        <ImageView
-            android:layout_width="72dp"
-            android:layout_height="72dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/img_logo"
-            tools:ignore="ContentDescription" />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_logo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/flavorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
