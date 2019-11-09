@@ -21,6 +21,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "environment"
+    productFlavors {
+
+        mock {
+            applicationIdSuffix ".mock"
+        }
+
+        prod {
+            applicationIdSuffix ".prod"
+        }
+    }
 }
 
 dependencies {
